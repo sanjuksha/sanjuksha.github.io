@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Experience - Cere Labs</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="index.html">Machine Learning Intern  </a></strong> at Cere Labs Pvt Ltd.</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="index.html">Portfolio</a></li>
+						<li><a href="Sanjuksha_Nirgude_resume.pdf">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>CURL</h2>
+						<p>Crawling Using Reinforcement Learning</p>
+					</header>
+					<embed src="images/rl_video.mp4" autostart="false" height="500" width="800" />
+					
+					<p>A variety of different problems can be solved using Reinforcement Learning, as agents can learn without expert supervision. In this project I created a crawler robot. The robot by using two arms to crawl and pushes its body towards a wall. After reaching the wall it stops and declares that it has reached the wall. In the process of reaching the wall, the robot by itself learns the actions that its arm have to take in order to move towards the wall. This is where reinforcement learning comes into picture. Reinforcement learning enables the robot to move its arms in different positions or states and decide the perfect sequence of actions that maximise the rewards.</p>
+					<a href="#" class="image"><img src="images/Cerelabs/curl1.jpg" alt="" height="500" width="800"/></a>
+					<h4>Hardware Setup: </h4>
+					<p>It consists of a 125x105 mm chassis, with two 65 mm diameter dummy wheels and a single castor wheel. Length of the hand is 80 mm including the gripper. The gripper here is a Lego rubber wheel used to help the robot push itself towards the wall while the gripper was in contact with the ground. Length of the arm is 100 mm. The arm is connected to the chassis by a 3.17 kg-cm futaba s3003 servo motor. The arm was connected to the hand by another futaba s3003 motor. The robot also has an ultrasonic sensor on its side facing the wall. The motors and the ultrasonic sensor is connected to a Raspberry Pi 3 board. Connections of Raspberry Pi to the ultrasonic sensor and the servos are given in the figures below.</p>
+					<p>In the following figures the servo is connected to raspberry pi 3 and a 5v power source. You can also power the servo using the raspberry pi 5V and GND pins. The motor has three pins with common colours red, brown and yellow. Connect the yellow to a gpio pin and red to 5V and brown to GND on Raspberry Pi.</p>
+					<a href="#" class="image left-side"><img src="images/Cerelabs/connections.png" alt="" height="500" width="400"/></a>
+					<a href="#" class="image right-side"><img src="images/Cerelabs/raspi.gif" alt="" height="500" width="400"/></a>
+					<h4> How CURL works? </h4>
+					<p> In this project we used an algorithm known as Q- learning which comes under Reinforcement Learning. Instead of calculating values and policies individually, it finds out q values of each possible action when in a particular state. And performs actions in each state depending on the q values.  </p>
+					<p> As mentioned above Raspberry Pi 3 is used as the controller, servo motors for the arm movements and ultrasonic sensor for distance measurement. Initially, it observes its current positions of the hand, arm and distance from wall. It then calculates the values of each state it could take and consequences it would face. And finally reaches to a conclusion of a best policy or sequence of actions it could take.</p>
+					<a href="#" class="image"><img src="images/Cerelabs/curl.jpg" alt="" height="500" width="800"/></a>
+					<p>In the experiment performed on CURL robot, when it learned to move towards the wall, it figured out when its arm was down and hand moved initially to the left and then to the right it was getting rewards. Even though this wasn't the perfect way to move towards the wall. The perfect sequence of actions to be taken was move arm up, move hand left, move arm down, move hand right. But as the actions it learned to perform gave it results it started performing the same actions repeatedly until it reached the wall.</p>
+					<h4>Summary: </h4>
+					<p> To sum up, CURL robot uses the q-learning algorithm is Reinforcement Learning to learn to crawl and move in a particular direction. After taking series of different actions and it finds out the perfect combination of actions which gets it rewards. Then it tries to maximize these rewards by taking the same action repetitively. This is therefore a small demonstration of how robots can learn using Artificial Intelligence, in this case Reinforcement learning.</p>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/sanjuksha" class="icon fa-facebook"></a></li>
+						<li><a href="https://www.instagram.com/sanjuksha/?hl=en" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: Sanjuksha</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
