@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Graduate Project - Baxter MyKDL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="index.html"> Baxter MyKDL</a></strong> at WPI.</h1>
+				<nav id="nav">
+					<ul>
+						<!-- <li><a href="index.html">Home</a></li> -->
+						<li><a href="index.html">Portfolio</a></li>
+						<li><a href="Sanjuksha_Nirgude_resume.pdf">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>Baxter Kinematics and Dynamics - Python Library</h2>
+					</header>
+					
+					<embed src="baxter_video.mp4" autostart ="false" audio ="false" height="500" width="800" /> 					
+					<h4>Project Outline: </h4>
+					<p>We developed a complete Kinematics and Dynamics Library for the 7-DOF arm of the Baxter robot. The libray includes solutions to Forward and Inverse Position and Velocity Kinematics and the M, C and G matrices required to build the dynamical models of manipulator arms along with workspace analysis and building blocks for null-space optimization</p>
+					<h4>Research Aspects: </h4>
+					<p> Real-time feasible Inverse Kinematics solutions satisfying joint-angle limits.Developmemt of a library with direct interface to the Baxter robot.Determination of the almost "half-a-million" coefficients of the M, C and G matrices.</p> 
+
+					<h4>Results: </h4>
+					<p> The Forward Position Kinematics solution had very comparative performance with the PyKDL package developed by the makers of Baxter, Rethink Robotics. The Cyclic Coordinate Descent algorithm was able to solve for any given position within ~3 seconds for any random configuration but almost real-time solutions for way-points along a given path. Pseduo-Inverse IK solutions along a given way-point performed well in real-time. The developed library was successfully tested on a skeletal model of the robot arm as well as the actual Baxter robot in Gazebo simulation environment using the standard ROS interface</p>
+					
+					<h4><a href ="baxter_report.pdf" >Complete Project Report</a></h4>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/sanjuksha" class="icon fa-facebook"></a></li>
+						<li><a href="https://www.instagram.com/sanjuksha/?hl=en" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: Sanjuksha</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
