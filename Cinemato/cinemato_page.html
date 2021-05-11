@@ -9,18 +9,18 @@
 		<title>Graduate Project - Motion Planning</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 	</head>
 	<body>
 
 		<!-- Header -->
 			<header id="header">
-				<h1><strong><a href="index.html"> Motion Planning </a></strong> at WPI.</h1>
+				<h1><strong><a href="../index.html"> Motion Planning </a></strong> at WPI.</h1>
 				<nav id="nav">
 					<ul>
 						<!-- <li><a href="index.html">Home</a></li> -->
-						<li><a href="index.html">Portfolio</a></li>
-						<li><a href="Sanjuksha_Nirgude_resume.pdf">Resume</a></li>
+						<li><a href="../index.html">Portfolio</a></li>
+						<li><a href="../Sanjuksha_Nirgude_resume.pdf">Resume</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -44,8 +44,8 @@
 
 					<h4>Methodology</h4>
 					<p>Our chosen method for path planning uses a local RRT* planner variant for obstacle avoidance while following pre-computed global paths in order to achieve a desired camera shot. ROS services provides the location of all obstacles in the environment and the location of the quadrotor. The location combined with geometric data about the obstacles are used to perform obstacle detection. The first part of the algorithm involves feeding a desired motion plan to the path planner. This can take many forms such as a simple point-to-point linear motion, or an arcing motion in which the quadrotor moves around a target in a circular motion. This arcing motion is one of many possible standard camera motions and one we chose to implement and focus on. The method uses circular interpolation in order to compute a smooth motion path around the target. The algorithm is fed the starting point, the ending point, and the target location and outputs an arc as a series of intermediate locations which connect the two points while keeping the target in the center. </p>
-					<a href="#" class="image right-side"><img src="images/world.png" alt="" height="500" width="500"/></a>
-					<a href="#" class="image"><img src="images/integration.png" alt="" height="500" width="800"/></a>
+					<a href="#" class="image right-side"><img src="../images/world.png" alt="" height="500" width="500"/></a>
+					<a href="#" class="image"><img src="../images/integration.png" alt="" height="500" width="800"/></a>
 					<h4>Results: </h4>
 					<p>This yeilded a global on operator defined shots as well as a local, expanding, RRT* variant for obstacle avoidance. The planner acts by taking in or generating a desired motion path for the camera. This is then searched for discontinuities where obstacles obstruct the desired path. A local RRT* path planner is applied to these sections of the path and the final, obstacle free path is output. Finally, the environment, and the quadcopter and its motion are simulated and visualized in ROS</p>
 <!-- 					<embed src="turtle2.mp4" autostart ="false" audio ="false" height="500" width="800" /> -->
@@ -69,10 +69,10 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
 
 	</body>
 </html>
