@@ -25,7 +25,7 @@ const competitions = [
       'Developed an underactuated eco robot guided by an autonomous hybrid robot to traverse a predefined path for the Asia Pacific Robot Contest. The hybrid robot used sensor fusion and path following algorithms to drive the eco robot through a course, demonstrating energy-efficient cooperative robotics. A technical report was published detailing the system architecture and control strategy.',
     tech: ['Underactuated Systems', 'Path Following', 'Sensor Fusion', 'Cooperative Robotics'],
     image: robocon2016Img,
-    paper: 'https://sanjuksha.github.io/hybrid.pdf',
+    paper: 'hybrid.pdf',
     video: undefined as string | undefined,
   },
 ];
