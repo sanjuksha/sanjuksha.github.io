@@ -61,7 +61,7 @@ export function Navigation() {
               </button>
             ))}
             <a
-              href="https://sanjuksha.github.io/Sanjuksha_Nirgude_resume.pdf"
+              href="/Sanjuksha_Nirgude_Exp_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -97,7 +97,7 @@ export function Navigation() {
               </button>
             ))}
             <a
-              href="https://sanjuksha.github.io/Sanjuksha_Nirgude_resume.pdf"
+              href="/Sanjuksha_Nirgude_Exp_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-left py-2 px-4 mt-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"

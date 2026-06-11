@@ -101,7 +101,7 @@ export function ProjectPage() {
               </a>
             )}
             <a
-              href="https://sanjuksha.github.io/Sanjuksha_Nirgude_resume.pdf"
+              href="/Sanjuksha_Nirgude_Exp_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-1.5 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors"
